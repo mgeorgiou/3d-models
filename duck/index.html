@@ -1,0 +1,27 @@
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Duck</title>
+  <style>
+    .model {
+      animation: spin 10s linear infinite;
+      transform: rotateX(-30deg);
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotateX(-30deg) rotateY(1turn)
+      }
+    }
+  </style>
+</head>
+<body>
+<h1>Model custom element: Hello world</h1>
+<x-model class="model" src="./assets/Duck.gltf" style="width: 80%; height:80%"></x-model>
+<script src="https://keithclark.co.uk/labs/3d-model-custom-element/examples/assets/js/vendor/custom-element-polyfill.min.js"></script>
+<script src="https://keithclark.co.uk/labs/3d-model-custom-element/examples/assets/js/vendor/three.min.js"></script>
+<script src="https://keithclark.co.uk/labs/3d-model-custom-element/examples/assets/js/vendor/three-gltf-loader.min.js"></script>
+<script src="https://keithclark.co.uk/labs/3d-model-custom-element/examples/assets/js/model-element.min.js"></script>
+</body>
+</html>
